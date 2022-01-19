@@ -17,9 +17,46 @@ class RegisterController: UIViewController {
     @IBOutlet weak var confirmPinTxt: UITextField!
     
     @IBOutlet weak var cbAgree: Checkbox!
+    @IBAction func onRegister(_ sender: Any) {
+        let username = usernameTxt.text ?? ""
+        let email = emailTxt.text ?? ""
+        let PIN = pinTxt.text ?? ""
+        let confirmPIN = confirmPinTxt.text ?? ""
+        let cbState = cbAgree.isChecked
+        
+        if(username.isEmpty){
+            showAlert(msg: "Please input your username!")
+        }else if(username.count < 3){
+            showAlert(msg: "Username must be at least 3 characters!")
+        }else if(email.isEmpty){
+            showAlert(msg: "Please input your email!")
+        }else if(!email.contains("@")){
+            showAlert(msg: "Please input valid email!")
+        }else if(PIN.isEmpty){
+            showAlert(msg: "Please input your PIN!")
+        }else if(PIN.count < 6){
+            showAlert(msg: "PIN must be 6 digits!")
+        }else if(confirmPIN.isEmpty){
+            showAlert(msg: "Please confirm your PIN!")
+        }else if(confirmPIN != PIN){
+            showAlert(msg: "PIN does not match!")
+        }else if(!cbState){
+            showAlert(msg: "You must agree withh Viary's terms and conditions to register your account!")
+        }else if(isRegisterValid(username: username)){
+            //segue straight to Home
+            performSegue(withIdentifier: <#T##String#>, sender: self)
+        }else{
+            showAlert(msg: "You've registered before with this username!")
+        }
+    }
+                 
+    func showAlert(msg: String){
+        let alert = UIAlertController(title: "Register Failed", message: msg,
+            preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default))
+        self.present(alert, animated: true, completion: nil)
+    }
     
-    @IBOutlet weak var onRegister: UIButton!
-    @IBOutlet weak var toLogin: UIButton!
     
     func prepareCheckbox(){
         cbAgree.borderStyle = .square
@@ -35,16 +72,15 @@ class RegisterController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    func isRegisterValid(username: String) -> Bool{
+        //check if username exist in database or not
+        //return true if no duplicate
+        
+        return false
+    }
+    
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }

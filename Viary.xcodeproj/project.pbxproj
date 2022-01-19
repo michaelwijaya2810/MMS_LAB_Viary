@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE0803A0279839B700C581A2 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08039F279839B700C581A2 /* LoginController.swift */; };
 		CE6472B92797C6AE00CAE5F6 /* SimpleCheckbox in Frameworks */ = {isa = PBXBuildFile; productRef = CE6472B82797C6AE00CAE5F6 /* SimpleCheckbox */; };
 		CEFA83192797289B007BFBC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFA83182797289B007BFBC5 /* AppDelegate.swift */; };
 		CEFA831B2797289B007BFBC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFA831A2797289B007BFBC5 /* SceneDelegate.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE08039F279839B700C581A2 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		CEFA83152797289B007BFBC5 /* Viary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Viary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFA83182797289B007BFBC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEFA831A2797289B007BFBC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				CEFA83292797289D007BFBC5 /* Info.plist */,
 				CEFA83212797289B007BFBC5 /* Viary.xcdatamodeld */,
 				CEFA832F279730E4007BFBC5 /* RegisterController.swift */,
+				CE08039F279839B700C581A2 /* LoginController.swift */,
 			);
 			path = Viary;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEFA8330279730E4007BFBC5 /* RegisterController.swift in Sources */,
+				CE0803A0279839B700C581A2 /* LoginController.swift in Sources */,
 				CEFA831D2797289B007BFBC5 /* ViewController.swift in Sources */,
 				CEFA83232797289B007BFBC5 /* Viary.xcdatamodeld in Sources */,
 				CEFA83192797289B007BFBC5 /* AppDelegate.swift in Sources */,
