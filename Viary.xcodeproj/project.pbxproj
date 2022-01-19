@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE6472B92797C6AE00CAE5F6 /* SimpleCheckbox in Frameworks */ = {isa = PBXBuildFile; productRef = CE6472B82797C6AE00CAE5F6 /* SimpleCheckbox */; };
 		CEFA83192797289B007BFBC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFA83182797289B007BFBC5 /* AppDelegate.swift */; };
 		CEFA831B2797289B007BFBC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFA831A2797289B007BFBC5 /* SceneDelegate.swift */; };
 		CEFA831D2797289B007BFBC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFA831C2797289B007BFBC5 /* ViewController.swift */; };
@@ -14,6 +15,7 @@
 		CEFA83232797289B007BFBC5 /* Viary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEFA83212797289B007BFBC5 /* Viary.xcdatamodeld */; };
 		CEFA83252797289D007BFBC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFA83242797289D007BFBC5 /* Assets.xcassets */; };
 		CEFA83282797289D007BFBC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFA83262797289D007BFBC5 /* LaunchScreen.storyboard */; };
+		CEFA8330279730E4007BFBC5 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFA832F279730E4007BFBC5 /* RegisterController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,7 @@
 		CEFA83242797289D007BFBC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEFA83272797289D007BFBC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEFA83292797289D007BFBC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEFA832F279730E4007BFBC5 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE6472B92797C6AE00CAE5F6 /* SimpleCheckbox in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +70,7 @@
 				CEFA83262797289D007BFBC5 /* LaunchScreen.storyboard */,
 				CEFA83292797289D007BFBC5 /* Info.plist */,
 				CEFA83212797289B007BFBC5 /* Viary.xcdatamodeld */,
+				CEFA832F279730E4007BFBC5 /* RegisterController.swift */,
 			);
 			path = Viary;
 			sourceTree = "<group>";
@@ -86,6 +91,9 @@
 			dependencies = (
 			);
 			name = Viary;
+			packageProductDependencies = (
+				CE6472B82797C6AE00CAE5F6 /* SimpleCheckbox */,
+			);
 			productName = Viary;
 			productReference = CEFA83152797289B007BFBC5 /* Viary.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +122,9 @@
 				Base,
 			);
 			mainGroup = CEFA830C2797289B007BFBC5;
+			packageReferences = (
+				CE6472B72797C6AE00CAE5F6 /* XCRemoteSwiftPackageReference "SimpleCheckbox" */,
+			);
 			productRefGroup = CEFA83162797289B007BFBC5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEFA8330279730E4007BFBC5 /* RegisterController.swift in Sources */,
 				CEFA831D2797289B007BFBC5 /* ViewController.swift in Sources */,
 				CEFA83232797289B007BFBC5 /* Viary.xcdatamodeld in Sources */,
 				CEFA83192797289B007BFBC5 /* AppDelegate.swift in Sources */,
@@ -362,6 +374,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE6472B72797C6AE00CAE5F6 /* XCRemoteSwiftPackageReference "SimpleCheckbox" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/BeauNouvelle/SimpleCheckbox.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE6472B82797C6AE00CAE5F6 /* SimpleCheckbox */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE6472B72797C6AE00CAE5F6 /* XCRemoteSwiftPackageReference "SimpleCheckbox" */;
+			productName = SimpleCheckbox;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		CEFA83212797289B007BFBC5 /* Viary.xcdatamodeld */ = {
