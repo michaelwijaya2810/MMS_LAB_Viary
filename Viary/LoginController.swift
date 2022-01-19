@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class LoginController: UIViewController {
 
@@ -14,6 +15,9 @@ class LoginController: UIViewController {
     }
     @IBOutlet weak var usernameTxt: UITextField!
     @IBOutlet weak var pinTxt: UITextField!
+    @IBOutlet weak var logo: UIImageView!
+    
+    var users: [NSManagedObject] = []
     
     @IBAction func onLogin(_ sender: Any) {
         let username = usernameTxt.text ?? ""
@@ -24,7 +28,7 @@ class LoginController: UIViewController {
             showAlert(msg: "Please input your PIN!")
         }else if(isLoginValid(username: username, PIN: PIN)){
             //goto Home
-            performSegue(withIdentifier: <#T##String#>, sender: self)
+            performSegue(withIdentifier: "homeSegue", sender: self)
         }else{
             showAlert(msg: "Username/PIN is wrong, please check again!")
         }
@@ -43,6 +47,31 @@ class LoginController: UIViewController {
     
     func isLoginValid(username: String, PIN: String) -> Bool{
         //check if username and PIN is found in the database
+        fetchData()
+        for check in users{
+            if(check.value(forKey: "username") as! String == username && check.value(forKey: "PIN") as! String == PIN){
+                return true
+            }
+        }
         return false
+    }
+    
+    func fetchData(){
+        guard let appDelegate =
+            UIApplication.shared.delegate as? AppDelegate else {
+              return
+          }
+          
+          let managedContext =
+            appDelegate.persistentContainer.viewContext
+          
+          let fetchRequest =
+            NSFetchRequest<NSManagedObject>(entityName: "User")
+          
+          do {
+             users = try managedContext.fetch(fetchRequest)
+          } catch let error as NSError {
+            print("Could not fetch. \(error), \(error.userInfo)")
+          }
     }
 }

@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		CE0803A0279839B700C581A2 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08039F279839B700C581A2 /* LoginController.swift */; };
+		CE0803C12798628500C581A2 /* ViaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0803BE2798628400C581A2 /* ViaryCell.swift */; };
+		CE0803C22798628500C581A2 /* ViaryDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0803BF2798628400C581A2 /* ViaryDetailVC.swift */; };
+		CE0803C42798632600C581A2 /* ViaryTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0803C32798632600C581A2 /* ViaryTableView.swift */; };
+		CE0803D02798664700C581A2 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0803CF2798664700C581A2 /* Note.swift */; };
+		CE0803D2279866F200C581A2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0803D1279866F200C581A2 /* User.swift */; };
 		CE6472B92797C6AE00CAE5F6 /* SimpleCheckbox in Frameworks */ = {isa = PBXBuildFile; productRef = CE6472B82797C6AE00CAE5F6 /* SimpleCheckbox */; };
 		CEFA83192797289B007BFBC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFA83182797289B007BFBC5 /* AppDelegate.swift */; };
 		CEFA831B2797289B007BFBC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFA831A2797289B007BFBC5 /* SceneDelegate.swift */; };
@@ -21,6 +26,11 @@
 
 /* Begin PBXFileReference section */
 		CE08039F279839B700C581A2 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		CE0803BE2798628400C581A2 /* ViaryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViaryCell.swift; sourceTree = "<group>"; };
+		CE0803BF2798628400C581A2 /* ViaryDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViaryDetailVC.swift; sourceTree = "<group>"; };
+		CE0803C32798632600C581A2 /* ViaryTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViaryTableView.swift; sourceTree = "<group>"; };
+		CE0803CF2798664700C581A2 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		CE0803D1279866F200C581A2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CEFA83152797289B007BFBC5 /* Viary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Viary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFA83182797289B007BFBC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEFA831A2797289B007BFBC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +74,9 @@
 		CEFA83172797289B007BFBC5 /* Viary */ = {
 			isa = PBXGroup;
 			children = (
+				CE0803BE2798628400C581A2 /* ViaryCell.swift */,
+				CE0803BF2798628400C581A2 /* ViaryDetailVC.swift */,
+				CE0803C32798632600C581A2 /* ViaryTableView.swift */,
 				CEFA83182797289B007BFBC5 /* AppDelegate.swift */,
 				CEFA831A2797289B007BFBC5 /* SceneDelegate.swift */,
 				CEFA831C2797289B007BFBC5 /* ViewController.swift */,
@@ -74,6 +87,8 @@
 				CEFA83212797289B007BFBC5 /* Viary.xcdatamodeld */,
 				CEFA832F279730E4007BFBC5 /* RegisterController.swift */,
 				CE08039F279839B700C581A2 /* LoginController.swift */,
+				CE0803CF2798664700C581A2 /* Note.swift */,
+				CE0803D1279866F200C581A2 /* User.swift */,
 			);
 			path = Viary;
 			sourceTree = "<group>";
@@ -158,9 +173,14 @@
 				CEFA8330279730E4007BFBC5 /* RegisterController.swift in Sources */,
 				CE0803A0279839B700C581A2 /* LoginController.swift in Sources */,
 				CEFA831D2797289B007BFBC5 /* ViewController.swift in Sources */,
+				CE0803C12798628500C581A2 /* ViaryCell.swift in Sources */,
 				CEFA83232797289B007BFBC5 /* Viary.xcdatamodeld in Sources */,
+				CE0803D02798664700C581A2 /* Note.swift in Sources */,
+				CE0803C42798632600C581A2 /* ViaryTableView.swift in Sources */,
 				CEFA83192797289B007BFBC5 /* AppDelegate.swift in Sources */,
+				CE0803C22798628500C581A2 /* ViaryDetailVC.swift in Sources */,
 				CEFA831B2797289B007BFBC5 /* SceneDelegate.swift in Sources */,
+				CE0803D2279866F200C581A2 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
